@@ -1,0 +1,68 @@
+body {
+  background: #add8e6;
+}
+h1 {
+  background: #7fb5c7;
+}
+table {
+  background: #add8e6;
+}
+* {
+  text-align: center;
+}
+
+td {
+  margin: 10px;
+  overflow: hidden;
+  background: #fff;
+}
+
+td img {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+}
+
+td img:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s ease;
+}
+
+td div {
+  padding: 10px;
+}
+
+span {
+  padding: 0 10px;
+}
+
+input {
+  width: 50px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid grey;
+}
+
+.previewWindow {
+  width: 400px;
+}
+
+.hidden {
+  display: none;
+}
+
+.details {
+  vertical-align: unset;
+}
+
+.details button {
+  float: right;
+}
+
+button {
+  margin: 0 10px;
+}
+
+.actions {
+  margin-top: 15px;
+}

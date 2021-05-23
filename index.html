@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Princess Elegance</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <h1 style="font: 40px Roboto; color: #205b6e">
+      Princess clothes and accessories
+    </h1>
+
+    <table>
+      <tr>
+        <td>
+          <img src="./img/blouse1.jpg" onclick="showPreview(event)" />
+          <div class="actions">
+            <span>Price: ₪49.0</span>
+            <span
+              ><input
+                type="number"
+                min="0"
+                name=""
+                id="blouse1Quantity"
+                value="0"
+            /></span>
+            <div>
+              <button id="blouse1" onclick="addItemToCart(event)">
+                Add item to cart
+              </button>
+            </div>
+          </div>
+        </td>
+        <td>
+          <img src="./img/blouse2.jpg" onclick="showPreview(event)" />
+          <div class="actions">
+            <span>Price: ₪49.0</span>
+            <span
+              ><input
+                type="number"
+                min="0"
+                name=""
+                id="blouse2Quantity"
+                value="0"
+            /></span>
+            <div>
+              <button id="blouse2" onclick="addItemToCart(event)">
+                Add item to cart
+              </button>
+            </div>
+          </div>
+        </td>
+        <td>
+          <img src="./img/blouse3.jpg" onclick="showPreview(event)" />
+          <div class="actions">
+            <span>Price: ₪49.0</span>
+            <span
+              ><input
+                type="number"
+                min="0"
+                name=""
+                id="blouse3Quantity"
+                value="0"
+            /></span>
+            <div>
+              <button id="blouse3" onclick="addItemToCart(event)">
+                Add item to cart
+              </button>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <!-- <tr>
+        <td>
+          <img src="./img/outfit.jpg" />
+          <div class="actions">
+            <span>Price: ₪59.0</span>
+            <span><input type="number" min="0" name="" id="" /></span>
+            <div><button>Add item to cart</button></div>
+          </div>
+        </td>
+        <td>
+          <img src="./img/outfit2.jpg" />
+          <div class="actions">
+            <span>Price: ₪59.0</span>
+            <span><input type="number" min="0" name="" id="" /></span>
+            <div><button>Add item to cart</button></div>
+          </div>
+        </td>
+        <td>
+          <img src="./img/outfit2.jpg" />
+          <div class="actions">
+            <span>Price: ₪59.0</span>
+            <span><input type="number" min="0" name="" id="" /></span>
+            <div><button>Add item to cart</button></div>
+          </div>
+        </td>
+      </tr> -->
+      <tr>
+        <td>
+          <img src="./img/shal.jpg" onclick="showPreview(event)" />
+          <div class="actions">
+            <span>Price: ₪29.0</span>
+            <span
+              ><input
+                type="number"
+                min="0"
+                name=""
+                id="shal1Quantity"
+                value="0"
+            /></span>
+            <div>
+              <button id="shal1" onclick="addItemToCart(event)">
+                Add item to cart
+              </button>
+            </div>
+          </div>
+        </td>
+        <td>
+          <img src="./img/shal2.jpg" onclick="showPreview(event)" />
+          <div class="actions">
+            <span>Price: ₪29.0</span>
+            <span
+              ><input
+                type="number"
+                min="0"
+                name=""
+                id="shal2Quantity"
+                value="0"
+            /></span>
+            <div>
+              <button id="shal2" onclick="addItemToCart(event)">
+                Add item to cart
+              </button>
+            </div>
+          </div>
+        </td>
+        <td>
+          <img src="./img/shal3.jpg" onclick="showPreview(event)" />
+          <div class="actions">
+            <span>Price: ₪29.0</span>
+            <span
+              ><input
+                type="number"
+                min="0"
+                name=""
+                id="shal3Quantity"
+                value="0"
+            /></span>
+            <div>
+              <button id="shal3" onclick="addItemToCart(event)">
+                Add item to cart
+              </button>
+            </div>
+          </div>
+        </td>
+        <td class="previewWindow">
+          <img
+            id="previewImage"
+            class="hidden"
+            src=""
+            onclick="removePreview()"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="./img/accessories.jpg" onclick="showPreview(event)" />
+          <div class="actions">
+            <span>Price: ₪19.0</span>
+            <span
+              ><input
+                type="number"
+                min="0"
+                name=""
+                id="accessories1Quantity"
+                value="0"
+            /></span>
+            <div>
+              <button id="accessories1" onclick="addItemToCart(event)">
+                Add item to cart
+              </button>
+            </div>
+          </div>
+        </td>
+        <td>
+          <img src="./img/accessories2.jpg" onclick="showPreview(event)" />
+          <div class="actions">
+            <span>Price: ₪19.0</span>
+            <span
+              ><input
+                type="number"
+                min="0"
+                name=""
+                id="accessories2Quantity"
+                value="0"
+            /></span>
+            <div>
+              <button id="accessories2" onclick="addItemToCart(event)">
+                Add item to cart
+              </button>
+            </div>
+          </div>
+        </td>
+        <td>
+          <img src="./img/accessories3.jpg" onclick="showPreview(event)" />
+          <div class="actions">
+            <span>Price: ₪19.0</span>
+            <span
+              ><input
+                type="number"
+                min="0"
+                name=""
+                id="accessories3Quantity"
+                value="0"
+            /></span>
+            <div>
+              <button id="accessories3" onclick="addItemToCart(event)">
+                Add item to cart
+              </button>
+            </div>
+          </div>
+        </td>
+        <td class="details">
+          <div>
+            <button onclick="clearCart()">Clear Cart</button>
+            <button onclick="displayCart()">Display Cart</button>
+          </div>
+          <div id="detailsText"></div>
+          <div id="totalSum"></div>
+        </td>
+      </tr>
+    </table>
+    <div id="preview">
+      <img src="" alt="" />
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
