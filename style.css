@@ -1,3 +1,7 @@
+* {
+  text-align: center;
+}
+
 body {
   background: #add8e6;
 }
@@ -7,12 +11,8 @@ h1 {
 table {
   background: #add8e6;
 }
-* {
-  text-align: center;
-}
 
 td {
-  margin: 10px;
   overflow: hidden;
   background: #fff;
 }
