@@ -42,7 +42,7 @@
 
     // Insert data to db
     $sql = 'INSERT INTO manal (ItemName, Price, Quantity)
-    VALUES(shal1, 29, 2)';
+    VALUES("shal1", 29, 2)';
     $result1 = $conn->query($sql);
     if($result1 == TRUE){ echo "Data inserted successfully"."<br />";}
     else{ echo "Failed to insert: ".$conn->error;}
