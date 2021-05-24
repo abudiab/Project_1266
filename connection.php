@@ -14,6 +14,7 @@
 
 
     // MYSQL Commands
+    // Get data from db
     $sql = "SELECT * FROM manal";
     $result = $conn->query($sql);
     if($result == TRUE){
@@ -29,12 +30,23 @@
 
             }
             $result->free();
+        }else {
+            echo "0 results";
         }
-        echo "0 results";
+        
     }
     else {
         echo "Failed: ".$conn->error;
     }
+    
+
+    // Insert data to db
+    $sql = 'INSERT INTO manal (ItemName, Price, Quantity)
+    VALUES(shal1, 29, 2)';
+    $result1 = $conn->query($sql);
+    if($result1 == TRUE){ echo "Data inserted successfully"."<br />";}
+    else{ echo "Failed to insert: ".$conn->error;}
+
     // Close connection
     // mysqli_close($conn);
 

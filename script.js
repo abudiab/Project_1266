@@ -1,6 +1,5 @@
 console.log("connected");
 
-// let cart = [];
 let cartObj = {};
 
 const listOfItems = {
@@ -28,25 +27,15 @@ function removePreview() {
 }
 
 function addItemToCart(e) {
-  //   console.log(e.target.id);
-  //   console.log(e.target);
   let quantity = Number(
     document.getElementById(e.target.id + "Quantity").value
   );
   if (quantity === 0) return;
-  //   console.log(quantity);
-  //   let tempItem = {
-  //     name: e.target.id,
-  //     price: listOfItems[e.target.id],
-  //     quantity: quantity,
-  //   };
-  //   cart.push(tempItem);
 
   cartObj[e.target.id]
     ? (cartObj[e.target.id][1] += quantity)
     : (cartObj[e.target.id] = [listOfItems[e.target.id], quantity]);
 
-  //   console.log("item added");
   alert("Item added to cart");
 }
 
@@ -55,17 +44,6 @@ function displayCart() {
   let detailsBox = document.getElementById("detailsText");
   let totalSum = document.getElementById("totalSum");
 
-  //   for (let i = 0; i < cart.length; i++) {
-  //     let paragraph = document.createElement("p");
-  //     let textNode = document.createTextNode(
-  //       `Item: ${cart[i].name}, Price: ${cart[i].price}, Quantity: ${
-  //         cart[i].quantity
-  //       }, Total: ${cart[i].price * cart[i].quantity}`
-  //     );
-  //     paragraph.appendChild(textNode);
-  //     detailsBox.appendChild(paragraph);
-  //     total += cart[i].price * cart[i].quantity;
-  //   }
   detailsBox.innerHTML = "";
   for (item in cartObj) {
     let paragraph = document.createElement("p");
